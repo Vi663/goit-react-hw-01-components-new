@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { App } from './components/App';
 import { FriendList } from './components/FriendList/FriendList';
+import { TransactionList } from './components/Transactions/TransactionList';
+
 import { Statistics } from './components/Stats/Statistics';
 import statisticalData from './statistical-data.json';
 
@@ -25,6 +27,7 @@ ReactDOM.render(
         ))}
     </section>
     <FriendList />
+    <TransactionList />
   </React.StrictMode>,
   
   document.getElementById('root')

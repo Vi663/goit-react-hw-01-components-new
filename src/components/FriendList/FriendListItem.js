@@ -7,8 +7,8 @@ const FriendListItem = ({
   id,
 }) => {
   return (
-    <li class="item">{id}
-      <span class="status">{isOnline}</span>
+    <li class="item">
+      <span class="status">{isOnline === true ? 'Online' : 'Offline'}</span>
       <img class="avatar" src={avatar} alt={name} width="48" />
       <p class="name">{name}</p>
     </li>
