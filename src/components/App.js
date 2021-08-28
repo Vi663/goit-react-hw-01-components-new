@@ -20,16 +20,6 @@ function App() {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      {/*<section className="statistics">
-        <h2 className="title">Upload stats</h2>
-        {statisticalData.map(data => (
-          <Statistics
-            id={data.id}
-            label={data.label}
-            percentage={data.percentage}
-          />
-        ))}
-      </section> */}
     </div>
     // 
   )
