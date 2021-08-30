@@ -1,31 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { App } from './components/App';
+import { ProfileCard } from './components/Profile/ProfileCard';
 import { FriendList } from './components/FriendList/FriendList';
 import { TransactionList } from './components/Transactions/TransactionList';
-
-import { Statistics } from './components/Stats/Statistics';
-import statisticalData from './statistical-data.json';
-
-// ReactDOM.render(
-  
-//   document.getElementById('root'),
-// );
+import { StatsList } from './components/Stats/StatsList';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    <section className="statistics">
-        <h2 className="title">Upload stats</h2>
-        {statisticalData.map(data => (
-          <Statistics
-            id={data.id}
-            label={data.label}
-            percentage={data.percentage}
-          />
-        ))}
-    </section>
+    <ProfileCard />
+    <StatsList />
     <FriendList />
     <TransactionList />
   </React.StrictMode>,

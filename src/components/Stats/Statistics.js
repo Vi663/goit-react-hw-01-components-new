@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import styles from './Statistics.module.css';
 
 const Statistics = ({
   id,
@@ -6,12 +7,10 @@ const Statistics = ({
   percentage,
 }) => {
   return (
-      <ul className="stat-list">
-        <li className="item">
-            <span className="label">{label}</span>
-          <span className="percentage">{percentage}%</span>
-        </li>
-      </ul>
+    <li className={styles.item}>
+      <span className={styles.label}>{label} </span>
+      <span className={styles.percentage}>{percentage}%</span>
+    </li>
   );
 }
 

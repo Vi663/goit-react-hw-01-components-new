@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { FaMapMarkerAlt, FaUserAlt } from "react-icons/fa";
+import styles from './Profile.module.css';
 
 const Profile = ({
   name,
@@ -8,15 +9,15 @@ const Profile = ({
   avatar,
 }) => {
   return (
-    <div className="description">
+    <div className={styles.description}>
       <img
         src={avatar}
         alt="user avatar"
-        className="avatar"
+        className={styles.avatar}
       />
-      <p className="name"><FaUserAlt /> {name}</p>
-      <p className="tag">{tag}</p>
-      <p className="location"><FaMapMarkerAlt /> {location}</p>
+      <p className={styles.name}><FaUserAlt /> {name}</p>
+      <p className={styles.tag}>{tag}</p>
+      <p className={styles.location}><FaMapMarkerAlt /> {location}</p>
     </div>
   )
 };

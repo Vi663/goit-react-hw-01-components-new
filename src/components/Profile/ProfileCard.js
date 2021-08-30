@@ -1,14 +1,13 @@
-import './App.css';
-import user from '../user.json';
+import user from './user.json';
+import { Profile } from './Profile';
+import { ProfileStatsList } from './ProfileStatsList';
+import styles from './Profile.module.css';
 
-import { Profile } from './Profile/Profile';
-import { ProfileStatsList } from './Profile/ProfileStatsList';
-
-function App() {
+function ProfileCard() {
   return (
-    <div className="profile">
+    <div className={styles.profile}>
       <Profile
-        // key={tag}
+        key={user.tag}
         name={user.name}
         tag={user.tag}
         location={user.location}
@@ -21,8 +20,6 @@ function App() {
         likes={user.stats.likes}
       />
     </div>
-    // 
   )
 }
-
-export { App };
+export {ProfileCard}

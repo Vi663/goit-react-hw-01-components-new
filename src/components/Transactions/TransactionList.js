@@ -1,9 +1,10 @@
-import {TransactionListItem} from './TransactionListItem'
+import {TransactionHistory} from './TransactionHistory'
 import transactions from './transactions.json';
+import styles from './TransactionList.module.css';
 
 function TransactionList() {
   return (
-    <table class="transaction-history">
+    <table className={styles.transactionHistory}>
       <thead>
         <tr>
           <th>Type</th>
@@ -14,7 +15,7 @@ function TransactionList() {
 
       <tbody>
         {transactions.map(transaction => (
-          <TransactionListItem
+          <TransactionHistory
             key={transaction.id}
             type={transaction.type}
             amount={transaction.amount}

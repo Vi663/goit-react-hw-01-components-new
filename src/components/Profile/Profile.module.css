@@ -1,10 +1,3 @@
-body {
-  font-family: openSuns;
-  box-sizing: border-box;
-  margin: none;
-}
-
-/* ----------------------------------/////Profile/////----------------------------------------------------- */
 .profile {
   border: olive 2px solid;
   display: flex;
@@ -39,10 +32,8 @@ body {
   font-weight: bold;
   font-size: 15px;
   line-height: 33px;
-
 }
 
-/* ----------------------------------------/////Stats/////---------------------------------------------------- */
 .stats {
   border-top: olive 2px solid;
   list-style: none;
@@ -60,9 +51,3 @@ body {
   width: 80px;
   flex-direction: column;
 }
-
-/* ----------------------------------/////Transaction/////---------------------------------------------------- */
-
-
-
-/* ----------------------------------/////FriendList/////----------------------------------------------------- */
