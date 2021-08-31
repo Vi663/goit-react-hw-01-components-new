@@ -1,23 +1,23 @@
 import PropTypes from 'prop-types';
 import { FaMapMarkerAlt, FaUserAlt } from "react-icons/fa";
-import styles from './Profile.module.css';
+import s from './Profile.module.css';
 
-const Profile = ({
+export const Profile = ({
   name,
   tag,
   location,
   avatar,
 }) => {
   return (
-    <div className={styles.description}>
+    <div className={s.description}>
       <img
         src={avatar}
         alt="user avatar"
-        className={styles.avatar}
+        className={s.avatar}
       />
-      <p className={styles.name}><FaUserAlt /> {name}</p>
-      <p className={styles.tag}>{tag}</p>
-      <p className={styles.location}><FaMapMarkerAlt /> {location}</p>
+      <p className={s.name}><FaUserAlt /> {name}</p>
+      <p className={s.tag}>@{tag}</p>
+      <p className={s.location}><FaMapMarkerAlt /> {location}</p>
     </div>
   )
 };
@@ -28,5 +28,3 @@ Profile.propTypes = {
   location: PropTypes.string.isRequired,
   avatar: PropTypes.node,
 }
-
-export {Profile}

@@ -1,12 +1,15 @@
 .friendList {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   flex-direction: column;
   list-style: none;
   justify-content: center;
+  padding: 0;
 }
 
 .item {
-  width: 300px;
+  min-width: 250px;
   display: flex;
   flex-direction: row;
   align-items: center;

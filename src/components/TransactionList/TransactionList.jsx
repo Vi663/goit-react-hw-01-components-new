@@ -1,10 +1,10 @@
 import {TransactionHistory} from './TransactionHistory'
-import transactions from './transactions.json';
-import styles from './TransactionList.module.css';
+import transactions from '../../Data/transactions.json';
+import s from './TransactionList.module.css';
 
-function TransactionList() {
+export function TransactionList() {
   return (
-    <table className={styles.transactionHistory}>
+    <table className={s.transactionHistory}>
       <thead>
         <tr>
           <th>Type</th>
@@ -26,5 +26,3 @@ function TransactionList() {
     </table>
   )
 }
-
-export { TransactionList };

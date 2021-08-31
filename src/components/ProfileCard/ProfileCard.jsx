@@ -1,11 +1,11 @@
-import user from './user.json';
+import user from '../../Data/user.json';
 import { Profile } from './Profile';
 import { ProfileStatsList } from './ProfileStatsList';
-import styles from './Profile.module.css';
+import s from './Profile.module.css';
 
-function ProfileCard() {
+export function ProfileCard() {
   return (
-    <div className={styles.profile}>
+    <div className={s.profile}>
       <Profile
         key={user.tag}
         name={user.name}
@@ -22,4 +22,3 @@ function ProfileCard() {
     </div>
   )
 }
-export {ProfileCard}

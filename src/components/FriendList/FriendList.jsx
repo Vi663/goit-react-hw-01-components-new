@@ -1,10 +1,10 @@
 import { FriendListItem } from './FriendListItem'
-import friends from './friends.json';
-import styles from './FriendList.module.css';
+import friends from '../../Data/friends.json';
+import s from './FriendList.module.css';
 
-function FriendList() {
+export function FriendList() {
   return (
-    <ul className={styles.friendList}>
+    <ul className={s.friendList}>
       {friends.map(friend => (
         <FriendListItem
           key={friend.id}
@@ -16,5 +16,3 @@ function FriendList() {
     </ul>
   )
 }
-
-export { FriendList };
